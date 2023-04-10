@@ -1,0 +1,133 @@
+<html>
+  <head>
+    <title>Creating Blog Page</title>
+    <link rel="stylesheet" href="assets/css/style.zero.css" />
+  </head>
+  <body>
+    <!-- NavBar -->
+    <nav>
+      <div class="nav-left">
+        <ul>
+          <img src="assets/css/images/dumbways.png" alt="dumbways" >
+          <li>
+              <a href="index.html">Home</a>
+          </li>
+          <li>
+              <a href="blog.html">Blog</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="nav-right">
+          <a href="contact-me.html">Contact Me</a>
+      </div>
+    </nav>
+
+    <!-- Blog -->
+    <!-- Form -->
+    <div class="blog">
+      <div class="blog-form">
+        <div class="form-container">
+          <form onsubmit="getBlog(event)">
+            <h1>Create Post Blog</h1>
+            <div>
+              <label for="input-blog-project-name">Project Name</label>
+              <input id="input-blog-project-name" />
+            </div>
+
+            <div class="flex-container">
+              <div>
+                <label for="input-blog-start-date">Start Date</label>
+                <input id="input-blog-start-date" />
+              </div>
+              <div>
+                <label for="input-blog-end-date">End Date</label>
+                <input id="input-blog-end-date"/>
+              </div>
+            </div>
+            
+            <div>
+              <label for="input-blog-description">Description</label>
+              <textarea id="input-blog-description"></textarea>
+            </div>
+
+            <div class="box">
+              <label for="input-blog-technologies">Technologies</label>
+
+                <div class="box-container">
+                  <label class="container">Node Js
+                    <input type="checkbox" checked="checked">
+                    <span class="checkmark"></span>
+                  </label>
+                  <label class="container">React Js
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                  </label>
+                  <label class="container">TypeScript
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                  </label>
+                  <label class="container">React Js
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+            </div>
+            
+            <div>
+              <label>Upload Image</label>
+              <div class="input-blog-image-group">
+                <label for="input-blog-image">
+                  <input type="file" id="myFile" name="filename">
+                  <input type="file" id="input-blog-image" hidden />
+                </label> 
+              </div>
+            </div>
+
+            <div class="button-group">
+              <button>Post Blog</button>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <hr class="line" />
+      <div class="blog-list" id="contents">
+        <!-- dynamic content would be here -->
+          <div class="blog-list-item">
+          <div class="blog-image">
+            <img src="assets/images/blog img.png" alt="blog-img"/>
+          </div>
+          <div class="blog-content">
+            <div class="btn-group">
+              <button class="btn-edit">Edit Post</button>
+              <button class="btn-post">Post Blog</button>
+            </div>
+            <h1>
+              <a href="blog.detail.html" target="_blank"
+                >Pasar Coding di Indonesia Dinilai Masih Menjanjikan</a>
+            </h1>
+            <div class="detail-blog-content">
+              12 Jul 2021 22:30 WIB | Nafiisan N. Achmad
+            </div>
+            <p>
+              Ketimpangan sumber daya manusia (SDM) di sektor digital masih
+              menjadi isu yang belum terpecahkan. Berdasarkan penelitian
+              ManpowerGroup, ketimpangan SDM global, termasuk Indonesia,
+              meningkat dua kali lipat dalam satu dekade terakhir. Lorem ipsum,
+              dolor sit amet consectetur adipisicing elit. Quam, molestiae
+              numquam! Deleniti maiores expedita eaque deserunt quaerat! Dicta,
+              eligendi debitis?
+            </p>
+
+            <div style="float:right; margin: 10px">
+              <p style="font-size: 15px; color:grey">1 minutes ago</p>
+            </div>
+          </div>
+        </div>  
+      </div>
+
+    </div>
+  </body>
+  <!-- <script src="assets/js/script.js"></script> -->
+</html>

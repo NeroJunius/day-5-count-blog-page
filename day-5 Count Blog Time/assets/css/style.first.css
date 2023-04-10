@@ -1,0 +1,98 @@
+body {
+    background-color: rgb(192, 191, 191);
+    margin: 0;
+}
+
+.flex-container {
+    display: flex;
+    background-color: rgb(231, 229, 229);
+    margin: 200px 100px;
+    border: 0px solid ; 
+    padding: 10px auto; 
+    width: 500 px; 
+    box-sizing: border-box;
+    border-radius: 12px; 
+    box-shadow: 2px 4px 8px 1px
+    #746969;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  
+  .flex-container > div {  
+  background-color: #f1f1f1;
+  margin: 10px;
+  padding: 20px;
+  font-size: 30px;
+  }
+
+/* Navbar Styling */
+nav {
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    background-color: #dbdbdb;
+    padding: 0 40px;
+}
+
+nav img {
+    margin-right: 50px;
+}
+
+.nav-left ul {
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+}
+
+.nav-left ul li {
+    margin-right: 30px;
+    font-size: 20px;
+}
+
+.nav-left a {
+    text-decoration: none;
+    color: black;
+}
+
+.nav-right a {
+    text-decoration: none;
+    font-size: 20px;
+    background-color: black;
+    padding: 8px 20px;
+    border-radius: 5px;
+    color: white;
+}
+
+
+/* Contact me styling */
+form {
+    width: 350px;
+    margin: 50px auto;
+}
+
+form div {
+    margin-top: 10px;
+}
+
+label {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.container span{
+    font-family: Poppins;
+    margin-top: 20px;
+    margin-bottom: 15px ;
+}
+
+button {
+    width: 100px;
+    background-color: black;
+    padding: 10px 20px;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
